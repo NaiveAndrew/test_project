@@ -1,0 +1,29 @@
+abons = {"Иванов", "Петров", "Васильев", "Антонов"}
+
+debtors = {"Петров", "Антонов"}
+
+non_debtors = abons.difference(debtors)
+
+print(non_debtors)
+# {'Васильев', 'Иванов'}
+
+a = input("Введите первую строку: ")
+b = input("Введите вторую строку: ")
+
+a_set, b_set = set(a), set(b) # используем множественное присваивание
+
+a_and_b = a_set.intersection(b_set)
+
+print(a_and_b)
+
+a = input("Введите первую строку через пробелы: ")
+b = input("Введите вторую строку через пробелы: ")
+a_list = a.split()
+b_list = b.split()
+
+
+a_set, b_set = set(a_list), set(b_list) # используем множественное присваивание
+
+a_and_b = a_set.symmetric_difference(b_set)
+
+print(sorted(a_and_b))
