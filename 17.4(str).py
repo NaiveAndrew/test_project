@@ -39,3 +39,29 @@ print(s.lower())
 
 print(s.capitalize())
 # Hello!
+
+#Форматирование строк
+age = 25
+
+my_age = "I'm %d years old" % (age) # в шаблоне присутствует специальный символ %d
+
+print(my_age)
+# I'm 25 years old
+
+#Форматирование даты
+day = 14
+month = 2
+year = 2012
+
+print("%d.%02d.%d" % (day, month, year))
+# 14.02.2012
+print("%d-%02d-%d" % (year, month, day))
+# 2012-02-14
+print("%d/%d/%d" % (year, day, month))
+# 2012/14/2
+
+#Форматирование времени
+hours = 15
+minutes = 53
+seconds = 44
+print("%d:%d:%d" % (hours, minutes, seconds))
