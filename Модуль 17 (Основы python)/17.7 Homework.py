@@ -4,5 +4,5 @@ deposit = []
 for v in per_cent.values():
     value = money/100*v
     deposit.append(round(value,2))
-print (deposit)
+
 print ("Максимальная сумма, которую вы можете заработать -",max(deposit))
