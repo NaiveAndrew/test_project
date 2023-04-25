@@ -3,8 +3,6 @@ from extensions import APIException
 from extensions import CryptoCompareAPI
 from currencie_names import CURRENCIES
 import telebot
-import requests
-import json
 
 # Читаем токен телеграм бота из config.py
 from config import TOKEN
